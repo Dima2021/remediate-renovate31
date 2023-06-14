@@ -25,6 +25,10 @@
       	 "matchUpdateTypes": ["major"],
       	 "matchConfidence": ["high"],
       	 "addLabels": ["Major: high confidence"]
+       },
+       {
+      	 "matchManagers": ["docker-compose", "dockerfile", "github-actions", "travis"],
+         "dependencyDashboardApproval": true
        }
     ]
   },
