@@ -19,12 +19,12 @@
        {
       	 "matchUpdateTypes": ["major"],
       	 "matchConfidence": ["very high"],
-      	 "addLabels": ["Major: very high confidence"],
+      	 "addLabels": ["Major: very high confidence"]
        },
        {
       	 "matchUpdateTypes": ["major"],
       	 "matchConfidence": ["high"],
-      	 "addLabels": ["Major: high confidence"],
+      	 "addLabels": ["Major: high confidence"]
        }
     ]
   },
