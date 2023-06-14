@@ -1,0 +1,34 @@
+{
+  "settingsInheritedFrom": "Dima2021/whitesource-config@master",
+  "remediateSettings": {
+    "workflowRules": {
+      "enabled": true,
+      "minVulnerabilitySeverity": "LOW"
+    },
+    "enableRenovate": true,
+    "extends": [
+       "config:base",
+       "github>whitesource/merge-confidence:beta"
+    ],
+    "packageRules": [
+       {
+      	 "groupName": "minor and patch",
+      	 "matchUpdateTypes": ["minor", "patch"],
+      	 "matchConfidence": ["very high", "high"]
+       },
+       {
+      	 "matchUpdateTypes": ["major"],
+      	 "matchConfidence": ["very high"],
+      	 "addLabels": ["Major: very high confidence"],
+       },
+       {
+      	 "matchUpdateTypes": ["major"],
+      	 "matchConfidence": ["high"],
+      	 "addLabels": ["Major: high confidence"],
+       }
+    ]
+  },
+  "leastVulnerablePackageSettings": {
+    "enabled": true
+  }
+}
